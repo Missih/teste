@@ -1,5 +1,5 @@
-import { FC, useContext } from 'react'
-import styled, { ThemeContext } from 'styled-components'
+import { FC } from 'react'
+import styled from 'styled-components'
 import { Shape, Button, HeadingSmall, SubtitleSmall, Paragraph } from '../index'
 
 type CardProps = {
@@ -15,11 +15,9 @@ export const CardContent: FC<CardProps> = ({
     paragraph,
     buttonLabel,
 }) => {
-    const theme = useContext(ThemeContext)
-
     const CardContent = styled.div`
         background-color: #fff;
-        width: 300px;
+        width: 400px;
     `
 
     return (
