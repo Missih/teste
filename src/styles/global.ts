@@ -12,4 +12,9 @@ export default createGlobalStyle`
         font-size: ${({ theme }) => theme.font.size.xs.value};
         font-family: ${({ theme }) => theme.font.family.highlight.value};
     }
+
+    @font-face {
+        font-family: Archivo;
+        src: url(/archivo.ttf);
+    }
     `
