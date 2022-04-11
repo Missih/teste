@@ -56,8 +56,8 @@ declare module 'styled-components' {
             }
         }
 
-        brand: {
-            color: {
+        color: {
+            brand: {
                 primary: {
                     '1': {
                         value: string
@@ -79,6 +79,29 @@ declare module 'styled-components' {
                         value: string
                         attributes: { category: string; type: string }
                     }
+                }
+            }
+
+            neutral: {
+                '1': {
+                    value: string
+                    attributes: { category: string; type: string }
+                }
+                '2': {
+                    value: string
+                    attributes: { category: string; type: string }
+                }
+                '3': {
+                    value: string
+                    attributes: { category: string; type: string }
+                }
+                '4': {
+                    value: string
+                    attributes: { category: string; type: string }
+                }
+                '5': {
+                    value: string
+                    attributes: { category: string; type: string }
                 }
             }
         }
@@ -169,31 +192,6 @@ declare module 'styled-components' {
                     attributes: { category: string; type: string }
                 }
                 superdistant: {
-                    value: string
-                    attributes: { category: string; type: string }
-                }
-            }
-        }
-
-        neutral: {
-            color: {
-                '1': {
-                    value: string
-                    attributes: { category: string; type: string }
-                }
-                '2': {
-                    value: string
-                    attributes: { category: string; type: string }
-                }
-                '3': {
-                    value: string
-                    attributes: { category: string; type: string }
-                }
-                '4': {
-                    value: string
-                    attributes: { category: string; type: string }
-                }
-                '5': {
                     value: string
                     attributes: { category: string; type: string }
                 }
