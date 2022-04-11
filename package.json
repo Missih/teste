@@ -24,8 +24,8 @@
         "format": "prettier --write .",
         "lint": "eslint . --ext .js,.ts,.tsx",
         "eject": "react-scripts eject",
-        "storybook": "start-storybook -p 6006 -s public",
-        "build-storybook": "build-storybook -s public"
+        "sb": "start-storybook -p 6006 -s public",
+        "build-sb": "build-storybook -s public"
     },
     "eslintConfig": {
         "extends": [
