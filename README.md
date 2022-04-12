@@ -4,7 +4,7 @@ Nesse projeto, construi pensando em garantir a acessibilidade ao utilizar algum 
 
 Para poder reutilizar meus estilos e acessar eles com facilidade, utilizei a biblioteca Styled Components, nela posso criar componentes em forma de css, também me ajudou na criação dos temas onde pude acessá-los como propriedades dentro do código mais fácil, além disso, é melhor em renderizar os atributos do que o próprio css puramente, em questões de perfomance.
 
-A ideia inicial, foi em começar criando componentes e temas a partir dessa biblioteca para comparar com outras bibliotecas focada em Design System, assim poderia criar todo o sistema de forma manual e depois comparar com outras ferramentas automatizadas.
+A ideia inicial, foi em começar criando componentes e temas a partir dessa biblioteca para comparar com outras bibliotecas focada em Design System, assim poderia criar todo o sistema de forma manual e depois comparar com outras ferramentas automatizadas, para ententer sobre a estrutura do código em si e visualizando melhor suas vantagens vs desvantagens.
 
 
 ## Para executar os scripts
