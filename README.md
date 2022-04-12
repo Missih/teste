@@ -6,6 +6,7 @@ Para poder reutilizar meus estilos e acessar eles com facilidade, utilizei a bib
 
 A ideia inicial, foi em começar criando componentes e temas a partir dessa biblioteca para comparar com outras bibliotecas focada em Design System, assim poderia criar todo o sistema de forma manual e depois comparar com outras ferramentas automatizadas.
 
+
 ## Para executar os scripts
 
 ### `npm start`
@@ -20,12 +21,14 @@ Executa o storybook. Abra o [http://localhost:6000] para visualizá-lo em seu na
 
 Para avisar se o app estiver com algum erro.
 
+
 ## Tecnlogias Utilizadas 
 
 - TypeScript
 - React
 - Storybook
 - Styled Components
+
 
 ### Como otimizaria a manutenção e qualidade do código? Levando em consideração o cenário de uma grande empresa com múltiplos desenvolvedores.
 
