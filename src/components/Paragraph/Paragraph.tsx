@@ -1,15 +1,14 @@
-import { FC, useContext } from 'react'
-import styled, { ThemeContext } from 'styled-components'
+import React, { FC } from 'react'
+import styled from 'styled-components'
+
+const ParagraphContent = styled.p`
+    font-size: ${({ theme }) => theme.font.size.xs.value};
+    line-height: ${({ theme }) => theme.line.height.distant.value};
+    font-weight: ${({ theme }) => theme.font.weight.regular.value};
+    color: ${({ theme }) => theme.color.neutral[4].value};
+    margin-bottom: ${({ theme }) => theme.spacing.size.xs.value};
+`
 
 export const Paragraph: FC<{ content: string }> = ({ content }) => {
-    const { font, color, line, spacing } = useContext(ThemeContext)
-
-    const Paragraph = styled.p`
-        font-size: ${font.size.xs.value};
-        line-height: ${line.height.distant.value};
-        font-weight: ${font.weight.regular.value};
-        color: ${color.neutral[4].value};
-        margin-bottom: ${spacing.size.xs.value};
-    `
-    return <Paragraph>{content}</Paragraph>
+    return <ParagraphContent>{content}</ParagraphContent>
 }

@@ -1,15 +1,14 @@
-import { FC, useContext } from 'react'
-import styled, { ThemeContext } from 'styled-components'
+import React, { FC } from 'react'
+import styled from 'styled-components'
+
+const HeadingSmallComponent = styled.h4`
+    font-size: ${({ theme }) => theme.font.size.lg.value};
+    line-height: ${({ theme }) => theme.line.height.distant.value};
+    font-weight: ${({ theme }) => theme.font.weight.bold.value};
+    color: ${({ theme }) => theme.color.neutral[5].value};
+    margin-bottom: ${({ theme }) => theme.spacing.size.xxxs.value};
+`
 
 export const HeadingSmall: FC<{ content: string }> = ({ content }) => {
-    const { font, color, line, spacing } = useContext(ThemeContext)
-
-    const HeadingSmall = styled.h4`
-        font-size: ${font.size.lg.value};
-        line-height: ${line.height.distant.value};
-        font-weight: ${font.weight.bold.value};
-        color: ${color.neutral[5].value};
-        margin-bottom: ${spacing.size.xxxs.value};
-    `
-    return <HeadingSmall>{content}</HeadingSmall>
+    return <HeadingSmallComponent>{content}</HeadingSmallComponent>
 }

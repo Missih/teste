@@ -1,15 +1,14 @@
-import { FC, useContext } from 'react'
-import styled, { ThemeContext } from 'styled-components'
+import React, { FC } from 'react'
+import styled from 'styled-components'
+
+const SubtitleSmallComponent = styled.h5`
+    font-size: ${({ theme }) => theme.font.size.md.value};
+    line-height: ${({ theme }) => theme.line.height.medium.value};
+    font-weight: ${({ theme }) => theme.font.weight.medium.value};
+    color: ${({ theme }) => theme.color.neutral[4].value};
+    margin-bottom: ${({ theme }) => theme.spacing.size.xxs.value};
+`
 
 export const SubtitleSmall: FC<{ content: string }> = ({ content }) => {
-    const { font, color, line, spacing } = useContext(ThemeContext)
-
-    const SubtitleSmall = styled.h5`
-        font-size: ${font.size.md.value};
-        line-height: ${line.height.medium.value};
-        font-weight: ${font.weight.medium.value};
-        color: ${color.neutral[4].value};
-        margin-bottom: ${spacing.size.xxs.value};
-    `
-    return <SubtitleSmall>{content}</SubtitleSmall>
+    return <SubtitleSmallComponent>{content}</SubtitleSmallComponent>
 }
