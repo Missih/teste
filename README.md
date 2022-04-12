@@ -1,46 +1,32 @@
-# Getting Started with Create React App
+# Introdução 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Nesse projeto, construi pensando em garantir a acessibilidade ao utilizar algum recurso e ter facilidade na manutenção entre os meus componentes.
 
-## Available Scripts
+Para poder reutilizar meus estilos e acessar eles com facilidade, utilizei a biblioteca Styled Components, nela posso criar componentes em forma de css, também me ajudou na criação dos temas onde pude acessá-los como propriedades dentro do código mais fácil, além disso, é melhor em renderizar os atributos do que o próprio css puramente, em questões de perfomance.
 
-In the project directory, you can run:
+A ideia inicial, foi em começar criando componentes e temas a partir dessa biblioteca para comparar com outras bibliotecas focada em Design System, assim poderia criar todo o sistema de forma manual e depois comparar com outras ferramentas automatizadas.
+
+## Para executar os scripts
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Executa o app no ambiente de desenvolvimento. Abra o [http://localhost:3000] para visualizá-lo em seu navegador. 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### `npm run sb`
 
-### `npm test`
+Executa o storybook. Abra o [http://localhost:6000] para visualizá-lo em seu navegador.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `npm run lint`
 
-### `npm run build`
+Para avisar se o app estiver com algum erro.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tecnlogias Utilizadas 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- TypeScript
+- React
+- Storybook
+- Styled Components
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Como otimizaria a manutenção e qualidade do código? Levando em consideração o cenário de uma grande empresa com múltiplos desenvolvedores.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Sabemos o quão acaba sendo custoso em ter que lidar com a manutenção de diversos componentes. Pensando nisso, seria interessante implementar ferramentas automatizadas, como exemplo Material UI, ele oferece componentes prontos sem precisar dar manutenção apenas customiza, se for para teste de componete tem o React Test Library e o Storybook com suas addons, onde permite que sua UI seja tenha uma melhor acessibilidade e podendo ser controlada por você.
