@@ -4,7 +4,6 @@ import styled, { ThemeContext } from 'styled-components'
 export const Button: FC<{ label: string }> = ({ label }) => {
     const { font, color, border, spacing, line } = useContext(ThemeContext)
 
-    // styled theme?
     const Button = styled.button`
         cursor: pointer;
         font-size: ${font.size.xs.value};
