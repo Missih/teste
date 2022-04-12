@@ -28,7 +28,6 @@
         "react/react-in-jsx-scope": "off",
         "react/jsx-uses-vars": "off",
         "react/no-unescaped-entities": "off",
-        "@typescript-eslint/no-explicit-any": "off",
-        "allowEmptyCatch": true
+        "@typescript-eslint/no-explicit-any": "off"
     }
 }
